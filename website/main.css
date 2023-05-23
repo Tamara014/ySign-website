@@ -70,6 +70,9 @@ body{
     color: #FFFFFF;
     cursor: pointer;
 }
+.bars{
+    display: none;
+}
 .slides{
     position: relative;
     overflow: hidden;
@@ -368,4 +371,53 @@ body{
     text-decoration: none;
     color: #FFFFFF;
     padding: 10px;
+}
+@media (max-width: 1020px){
+    .nav ul, .nav button{
+        display: none;
+    }
+    .bars{
+        display: block;
+        margin-right: 30px;
+        color: #000000;
+        cursor: pointer;
+    }
+    .container1{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .title{
+        margin-top: 30px;
+    }
+    .tabs{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-between;
+    }
+    .container2{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .laptop{
+        position: relative;
+    }
+    .laptop img{
+        height: 200px;
+        position: absolute;
+        margin-left: -150px;
+        margin-top: -50px;
+    }
+    .text{
+        margin-right: -50px;
+        margin-top: 150px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
 }
